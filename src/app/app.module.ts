@@ -1,0 +1,21 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent, VcrComponent } from './app.component';
+import { HighlightDirective } from './highlight.directive';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    HighlightDirective,
+    VcrComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
