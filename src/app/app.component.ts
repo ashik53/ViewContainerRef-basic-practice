@@ -23,7 +23,11 @@ export class VcrComponent{
 
   ngAfterViewInit(){
     //use viewContaineRef 
-    //if you don't use viewContainerRef reference to create view, it will not work 
+    /*
+      if you don't use viewContainerRef reference to create view, it will not work 
+      it helps us to create a dynamic view of the 'vcr' template using #tpl reference
+      
+    */
     this._vcr.createEmbeddedView(this.tpl);
   }
 
